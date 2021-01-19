@@ -1,0 +1,33 @@
+<%- include('header') -%>
+
+<div class="register-form">
+    <div class="form-title">
+        <h2>Register</h2>
+    </div>
+    <form class="reg" action="/user/register" method="POST">
+       
+        <input class="reginput" type="username" placeholder="username" name="username" required/>
+        <br />
+
+       
+        <input class="reginput" type="email" placeholder="email" name="email" required/>
+        <br />
+
+        
+        <input class="reginput" type="password" placeholder="password" name="password" required/>
+        <br />
+
+        
+        <input class="reginput" type="password" placeholder="password" name="confirmPassword" required/>
+        <br />
+
+        <button class="regbutton" type="submit">Register</button>
+        <br />
+    </form>
+
+    <div class="not-registered">
+        <p>Already Registered? <a href="/">Login Now</a></p>
+    </div>
+</div>
+
+<%- include('footer') -%>

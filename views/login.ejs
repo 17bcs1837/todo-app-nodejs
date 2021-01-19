@@ -1,0 +1,22 @@
+<%- include('header') -%>
+<%- include('footer') -%>
+
+<div class="login-form">
+    <div class="form-title">
+        <h2>Login</h2>
+    </div>
+    <form class="log" action="/user/login" method="POST">
+        <input class="loginput" type="email" placeholder="email" name="email" required/>
+        <br />
+        
+
+        <input class="loginput" type="password" placeholder="password" name="password" required/>
+        <br />
+        
+        <button class="logbutton" type="submit">Login</button>
+    </form>
+
+    <div class="not-registered">
+        <p>Haven't registered yet? <a href="/register">Register Now</a></p>
+    </div>
+</div>

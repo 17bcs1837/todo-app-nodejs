@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>NodeJS Todo App</title>
+    <link rel="stylesheet" type="text/css" href="/css/registerStyle.css" />
+    <link rel="stylesheet" type="text/css" href="/css/errorStyle.css" />
+    <link rel="stylesheet" type="text/css" href="/css/loginStyle.css" />
+    <link rel="stylesheet" type="text/css" href="/css/dashboardStyle.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="topbar-container">
+        <div class="title">
+            <ul>
+                <li class="apptitle">Todo App</li>
+                <% if(locals.setCookie) { %>
+                    <li class="h1">
+                        <form class="logout-form" action="/user/logout" method="post">
+                            <input class="logout" type="submit" value="Logout" />
+                        </form>
+                    </li>
+                <% } %>
+            </ul>
+        </div>
+
+        <div class="userLogout">
+            
+        </div>
+    </div>
+    
