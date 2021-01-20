@@ -15,7 +15,8 @@
 #### The user is authenticated with JSON Web Token. Once authenticated, a authentication token is generated, this authentication token is stored as **cookie**. This cookie contains the email address of the user. Whenever the user makes a request to the server, the authentication token is verified with JWT.
 #### Upon successful verification, the user is authorized to:
 * 1. **CREATE** todo items.
-* 2. **DELETE** todo items.
+* 2. **READ** todo items.
+* 3. **DELETE** todo items.
 
 ## Database
 #### The database used in this app is Postgresql. This database is hosted at https://www.elephantsql.com/
