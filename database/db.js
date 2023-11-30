@@ -2,9 +2,9 @@ const PoolClass = require('pg').Pool;
 
 const pool = new PoolClass({
     user: 'vytavlpy',
-    host: 'john.db.elephantsql.com',
-    database: 'vytavlpy',
-    password: 'Rboqm5vk8bnMOUyvnM21BBg9d4wlN_f5',
+    host: '',
+    database: '',
+    password: '',
     port: 5432
 })
 
